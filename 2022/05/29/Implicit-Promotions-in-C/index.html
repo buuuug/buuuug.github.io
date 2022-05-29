@@ -15,13 +15,13 @@ document.addEventListener("pjax:success", initScrollReveal);
 <meta property="og:site_name" content="Arete Blog">
 <meta property="og:description" content="Implicit Type PromotionsAlso known as ‘automatic type conversion’.  Done by the compiler on its own, without any external trigger from the user. Generally takes place when in an expression more than o">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://buuuug.github.io/2022/05/29/Implicit-Promotions-in-C/Function-Prototype-in-c.png">
+<meta property="og:image" content="https://buuuug.github.io/2022/05/29/Implicit-Promotions-in-C/image-20220529225710728.png">
 <meta property="article:published_time" content="2022-05-29T13:57:07.000Z">
-<meta property="article:modified_time" content="2022-05-29T14:48:51.747Z">
+<meta property="article:modified_time" content="2022-05-29T14:57:17.767Z">
 <meta property="article:author" content="Arete">
 <meta property="article:tag" content="ANSI C">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://buuuug.github.io/2022/05/29/Implicit-Promotions-in-C/Function-Prototype-in-c.png"><script>(function() {
+<meta name="twitter:image" content="https://buuuug.github.io/2022/05/29/Implicit-Promotions-in-C/image-20220529225710728.png"><script>(function() {
   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
   const setting = localStorage.getItem('darken-mode') || 'auto'
   if (setting === 'dark' || (prefersDark && setting !== 'light'))
@@ -46,7 +46,7 @@ IconifyProviders = {
 </ul>
 <hr>
 <h2 id="Default-Argument-Promotions"><a href="#Default-Argument-Promotions" class="headerlink" title="Default Argument Promotions"></a>Default Argument Promotions</h2><p><strong>Default argument promotions are used exactly when the expected type of the argument is <em>unknown</em>,</strong> which is to say when there’s no prototype or when the argument is variadic. And the definition of a function also acts as a prototype that is available from the declaration to the end of the transltate unit.</p>
-<img src="https://buuuug.github.io/2022/05/29/Implicit-Promotions-in-C/Function-Prototype-in-c.png" alt="Lightbox" style="zoom: 33%;" loading="lazy">
+<img src="https://buuuug.github.io/2022/05/29/Implicit-Promotions-in-C/image-20220529225710728.png" alt="image-20220529225710728" style="zoom: 67%;" loading="lazy">
 
 <h3 id="Has-No-Prototype"><a href="#Has-No-Prototype" class="headerlink" title="Has No Prototype"></a>Has No Prototype</h3><p>If the expression that denotes the called function has a type that <strong>does not include a prototype</strong>, the integer promotions are performed on each argument, and arguments that have type <code>float</code> are promoted to <code>double</code>. </p>
 <h3 id="Variadic-Functions"><a href="#Variadic-Functions" class="headerlink" title="Variadic Functions"></a>Variadic Functions</h3><p>The ellipsis notation in a function prototype declaration causes argument type conversion to stop after the last fixed parameter. <strong>The default argument promotions are performed on trailing arguments</strong>.</p>
